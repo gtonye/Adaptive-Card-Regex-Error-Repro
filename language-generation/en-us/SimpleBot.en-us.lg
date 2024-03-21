@@ -1,0 +1,44 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Attachments = ${json(SendActivity_Greeting_attachment_Nv62XL())}
+]
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get that.
+# SendActivity_Greeting_attachment_Nv62XL()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Present a form and submit it back to the originator"
+    },
+    {
+      "type": "Input.Text",
+      "id": "lastName",
+      "placeholder": "1234567890",
+      "label": "What is your phone number?",
+      "isRequired": true,
+      "errorMessage": "A valid number is required",
+      "regex": "^\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9 ]{4})\\ ?\\.?$"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit",
+      "data": {}
+    }
+  ]
+}```

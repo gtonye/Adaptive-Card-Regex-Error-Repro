@@ -2,7 +2,7 @@
 
 ## Foreword
 
-The present repository contains the repro for an issue with Adaptive Cards regex validation in Bot Framework.
+The present repository contains the repro for [an issue with Adaptive Cards regex validation in Microsoft Bot Framework](https://github.com/microsoft/botbuilder-dotnet/issues/6766).
 
 ## Steps to get a repro
 

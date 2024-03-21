@@ -25,7 +25,7 @@ We are looking to send an adaptive card with a Regex validation for a phone numb
 
 Regex:
 ```
-^\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9 ]{4})\\ ?\\.?$
+^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9 ]{4})\ ?\.?$
 ```
 
 * The Regex is valid (you can verify on https://regex101.com/) and accepts input such as `1234567890`, `123 456 8790`
